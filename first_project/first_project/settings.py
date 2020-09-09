@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'first_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-########## Pattern 5 STEP 10 connect to Database. SQLLite by default, can be changed
+########### Pattern 5 STEP 10 connect to Database. SQLLite by default, can be changed
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
