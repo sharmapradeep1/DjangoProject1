@@ -1,0 +1,31 @@
+{% extends "first_app/base.html" %}
+    {% block body_block%}
+    {% load static %}
+    <h1>Pattern 3 :Rendering Template HTML and inserting text from view</h1>
+    {{ temp_insert|upper }}
+    <p>{{ temp_insert|cut:'from'|upper }}</p>
+    <p>
+    {{ temp_num|add:"99" }}
+    </p>
+<! --########## Pattern 3 STEP 30 Render page instead of http response, associate template to project -->
+<!-- ##### Pattern 11 Step 50, relative paths for pages and template inheritence -->
+<!-- ##### Pattern 11 Step 50, home 3 - render template.html now inherits from base.html and also navigation to other pages via menu will use relative paths from base.html -->
+<!-- ##### Pattern 11 Step 60, home 3 - Template filter upper on inputs from view -->
+<!-- Pattern 11 Step 80, home 3 - use cut function created and added in templatetags -->
+    {% endblock %}
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Render Template</title>
+  </head>
+  <body>
+    <h1>Pattern 3 :Rendering Template HTML and inserting text from view</h1>
+    {{ temp_insert }}
+<! ########## Pattern 3 STEP 30 Render page instead of http response, associate template to project 
+  </body>
+</html> -->

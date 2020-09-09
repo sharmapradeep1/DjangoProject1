@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<! --########## Pattern 4 STEP 50 Render page with static content. Above has to be load static only - static is a registered tag library -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Static content page</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+  </head>
+  <body>
+    <h1>Pattern 4 - Display static content - images, css, javascript</h1>
+    <img src="{% static "images/djangoguitar.jpg" %}" alt="Uh Oh, didn't show!">
+    {{temp2_insert}}
+<! --########## Pattern 4 STEP 60 Render page instead of http response, associate template to project. Static tag in src above helps build relative path -->
+  </body>
+</html>
